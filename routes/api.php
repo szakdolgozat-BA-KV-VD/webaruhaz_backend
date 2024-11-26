@@ -9,3 +9,4 @@ Route::get('/users',[UserController::class, 'show']);
 Route::get('/zsautos',[ZsautoController::class, 'show']);
 Route::post('/zsautos/add',[ZsautoController::class, 'add']);
 Route::patch('/zsautos/update/{id}', [ZsautoController::class, 'update']);
+Route::delete('/zsautos/destroy/{id}', [ZsautoController::class, 'destroy']);

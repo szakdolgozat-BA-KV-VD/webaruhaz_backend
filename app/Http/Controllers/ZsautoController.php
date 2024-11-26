@@ -36,10 +36,16 @@ public function update(Request $request, string $id)
         'ar' => 'sometimes|integer|min:100000|max:5000000',
     ]);
 
-    $record = zsauto::findOrFail($id); // Ensures the record exists or throws a 404
+    $record = zsauto::findOrFail($id); 
     $record->fill($validated);
     $record->save();
 }
 
+public function destroy(string $id)
+{
+    $record = zsauto::findOrFail($id);
+
+    $record->delete();
+}
 
 }
