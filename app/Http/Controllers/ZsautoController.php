@@ -10,7 +10,7 @@ class ZsautoController extends Controller
     public function show(){
         return zsauto::all();
     }
-
+ 
     public function add(Request $request)
 {
     $validated = $request->validate([
