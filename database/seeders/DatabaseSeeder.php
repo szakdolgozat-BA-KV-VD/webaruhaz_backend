@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Rendeles;
 use App\Models\User;
 use App\Models\zsauto;
 use Database\Factories\ZsautoFactory;
@@ -18,6 +19,7 @@ class DatabaseSeeder extends Seeder
         // User::factory(10)->create();
 
         User::factory(15)->create();
+        Rendeles::factory(5)->create();
         //zsauto::factory(10)->create();
     }
 }
