@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('marka');
             $table->string('tipus');
             $table->string('szin');
-            $table->string('fogyaszt');
+            $table->double('fogyaszt');
             $table->integer('ar');
             $table->timestamps();
         });
